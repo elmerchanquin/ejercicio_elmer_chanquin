@@ -1,0 +1,239 @@
+/* VARIABLES */
+:root {
+    --lg: 2em;
+    --sm: 1em;
+    --primary-color: #F76D4D;
+    --secondary-color: #00AAE9;
+    --complementary-color: #F9F9F9;
+    --contrast: rgb(228, 228, 228);
+    --white: white;
+}
+/* GENERAL */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    margin: 0;
+}
+/* LAYOUT */
+.container {
+    padding: 0 50px;
+}
+
+/* TOP SECTION */
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+.page-title {
+    margin: 0;
+    font-size: var(--lg);
+}
+
+/* STATS SECTION */
+.stats-section {
+    display: flex;
+    gap: 20px;
+}
+.info-card {
+    background: var(--complementary-color);
+    padding: 15px;
+    width: 20%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: var(--sm);
+}
+.info-card-resume {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 130px auto 30px;
+}
+.text-info-card {
+    border-left: 2px solid var(--complementary-color);
+    padding: 0 20px;
+}
+.text-info-card strong {
+    font-size: var(--lg);
+}
+
+/* MESSAGES SECTION */
+th {
+    text-align: left;
+}
+thead tr {
+    border-bottom: 2px solid var(--contrast);
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 25px 0;
+    overflow: scroll;
+    height: 100px;
+}
+td, th {
+    padding: 15px 0;
+}
+th:nth-child(4) {
+    width: 35%;
+}
+
+/* ELEMENTS */
+.primary-button {
+    padding: 0 35px;
+    border-radius: 999px;
+    background: var(--white);
+    border: none;
+    box-shadow: #a1a1a1  1px 3px 10px 1px;
+    display: flex;
+    align-items: center;
+    font-size: var(--sm);
+    cursor: pointer;
+}
+.loadbar {
+    padding: 0 20px 0 0;
+    width: 120px;
+    height: 3px;
+    background-color: var(--white);
+    border: 1px solid var(--white);
+    border-radius: 2px;
+}
+
+.bar {
+    line-height: 25px;
+    height: 100%;
+    display: block;
+    font-family: arial;
+    font-size: 12px;
+    background-color: var(--complementary-color);
+    color: var(--white);
+    border-radius: 5px;
+}
+.status-mark {
+    display: inline-block;
+    width: 11.986px;
+    height: 11.986px;
+    background-repeat: no-repeat;
+}
+.status-clock {
+    background-image: url(./icons/clock.svg);
+}
+.status-verified {
+    background-image: url(./icons/verified.svg);
+}
+.pagination {
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+    padding: 0;
+    list-style-type: none;
+    justify-content: flex-end;
+}
+.page-item {
+    padding: 10px;
+    border: 1px solid var(--contrast);
+    border-right: none;
+}
+.page-item:first-child {
+    border-radius: 5px 0 0 5px;
+}
+.page-item:last-child {
+    border-radius: 0 5px 5px 0;
+    border: 1px solid var(--contrast);
+}
+.page-link {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1em;
+}
+.disabled .page-link {
+    color: black;
+}
+.active {
+    background-color: var(--primary-color);
+}
+.active .page-link {
+    color: var(--white);
+}
+/* EXTRAS */
+.button-icon {
+    font-size: 3em;
+    color: var(--secondary-color);
+    margin: 0 15px 0 0;
+    font-weight: lighter;
+}
+.skyblue {
+    background-color: skyblue;
+}
+.green {
+    background-color: green;
+}
+.red {
+    background-color: red;
+
+}
+.yellow {
+    background-color: yellow;
+}
+.skyblue-border {
+    border-color: skyblue;
+}
+.green-border {
+    border-color: green;
+}
+.red-border {
+    border-color: red;
+
+}
+.yellow-border {
+    border-color: yellow;
+}
+@media screen and (max-width: 1600px) {
+    .loadbar {
+        width: 80px;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .loadbar {
+        display: none;
+    }
+    th:nth-child(4) {
+        width: auto;
+    }
+
+}
+@media screen and (max-width: 1000px) {
+    .info-card:first-child {
+        display: none;
+    }
+}
+@media screen and (max-width: 750px) {
+    .stats-section {
+        flex-wrap: wrap;
+    }
+    .info-card {
+        width: 40%;
+    }
+    .messages-table {
+        width: 650px;
+        overflow: scroll;
+    }
+}
+@media screen and (max-width: 525px) {
+    .stats-section {
+        justify-content: center;
+    }
+    .info-card {
+        width: 80%;
+    }
+    .container {
+        padding: 10px;
+    }
+    .top-section {
+        padding: 5px 0;
+    }
+}

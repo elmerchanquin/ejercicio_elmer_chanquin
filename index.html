@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatcartel</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <script src="./main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <section class="top-section">
+            <h1 class="page-title">Mensajes salientes</h1>
+            <button class="primary-button" type="button">
+                <span class="button-icon">+</span>Nuevo Mensaje
+            </button>
+        </section>
+        <section class="stats-section">
+            <div class="info-card">
+                <div class="info-card-resume">
+                    <p>Enviados</p>
+                    <div class="loadbar">
+                        <span class="bar skyblue"></span>
+                    </div>
+                    <p>25</p>
+                </div>
+                <div class="info-card-resume">
+                    <p>Recibidos</p>
+                    <div class="loadbar">
+                        <span class="bar green"></span>
+                    </div>
+                    <p>25</p>
+                </div>
+                <div class="info-card-resume">
+                    <p>No Recibidos</p>
+                    <div class="loadbar">
+                        <span class="bar red"></span>
+                    </div>
+                    <p>0</p>
+                </div>
+                <div class="info-card-resume">
+                    <p>Respondidos</p>
+                    <div class="loadbar">
+                        <span class="bar yellow"></span>
+                    </div>
+                    <p>0</p>
+                </div>
+            </div>
+            <div class="info-card">
+                <img src="./icons/sent.svg" alt="icono enviados">
+                <div class="text-info-card skyblue-border">
+                    <p>Mensajes enviados</p>
+                    <strong>25</strong>
+                </div>
+            </div>
+            <div class="info-card">
+                <img src="./icons/received.svg" alt="icono enviados">
+                <div class="text-info-card green-border">
+                    <p>Mensajes recibidos</p>
+                    <strong>25</strong>
+                </div>
+            </div>
+            <div class="info-card">
+                <img src="./icons/not_received.svg" alt="icono enviados">
+                <div class="text-info-card red-border">
+                    <p>Mensajes no recibidos</p>
+                    <strong>0</strong>
+                </div>
+            </div>
+            <div class="info-card">
+                <img src="./icons/answered.svg" alt="icono enviados">
+                <div class="text-info-card yellow-border">
+                    <p>Mensajes respondidos</p>
+                    <strong>0</strong>
+                </div>
+            </div>
+        </section>
+        <section class="messages-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Título</th>
+                        <th>Estado</th>
+                        <th>Fecha de creación</th>
+                        <th>Efectividad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mensaje de prueba</td>
+                        <td>En revisión <i class="status-mark status-clock"></i></td>
+                        <td>15-07-2021 15:59</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Bienvenida</td>
+                        <td>Verificado <i class="status-mark status-verified"></i></td>
+                        <td>01-07-2021 00:00</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Orden por llegar</td>
+                        <td>Verificado <i class="status-mark status-verified"></i></td>
+                        <td>01-01-2021 00:00</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Pedidos</td>
+                        <td>Verificado <i class="status-mark status-verified"></i></td>
+                        <td>01-01-2021 00:00</td>
+                        <td>0%</td>
+                    </tr>
+                    <tr>
+                        <td>Actualización de seguimiento</td>
+                        <td>Verificado <i class="status-mark status-verified"></i></td>
+                        <td>02-07-2020 07:00</td>
+                        <td>0%</td>
+                    </tr>
+                </tbody>
+            </table>
+            <nav>
+                <ul class="pagination">
+                    <li class="page-item disabled">
+                        <span class="page-link">Anterior</span>
+                    </li>
+                    <li class="page-item active">
+                        <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Siguiente</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </div>
+</body>
+
+</html>
